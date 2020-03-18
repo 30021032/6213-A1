@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="OrchardManagment.AddHarvest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OrchardManagment"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="400" Height="500">
+
+    <Grid Margin="0,0,0,0">
+        <TextBlock HorizontalAlignment="Left" Margin="40,20,0,0" Text="Add Harvest" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="-40,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="480" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock x:ConnectionId='2' x:Name="txtName" HorizontalAlignment="Left" Margin="16,70,0,0" Text="Kg Harvested:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='3' x:Name="txtTreeType" HorizontalAlignment="Left" Margin="16,107,0,0" Text="Date:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='4' x:Name="txtSize" HorizontalAlignment="Left" Margin="16,144,0,0" Text="Price/Kg:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='5' x:Name="txtComment" HorizontalAlignment="Left" Margin="16,217,0,0" Text="Comment:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="120,63,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="270"/>
+        <TextBox HorizontalAlignment="Left" Margin="120,100,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="270"/>
+        <TextBox HorizontalAlignment="Left" Margin="120,137,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="270"/>
+        <TextBox HorizontalAlignment="Left" Margin="120,211,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="233"/>
+        <Button x:ConnectionId='6' x:Name="btnSave" Content="Save" Margin="282,458,0,0" VerticalAlignment="Top" Width="108"                      />
+        <Button x:ConnectionId='7' x:Name="btnCancel" Content="Cancel" Margin="191,458,0,0" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.779,0.375"                        />
+        <TextBlock x:ConnectionId='8' x:Name="txtSize_Copy" HorizontalAlignment="Left" Margin="16,181,0,0" Text="Total Income:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="120,174,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="270"/>
+
+    </Grid>
+</Page>
+
